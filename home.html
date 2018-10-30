@@ -2,14 +2,34 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <style>
+      h1{
+        text-align:center;
+        border-bottom:1px black solid;
+        padding:5px;
+      }
+      img{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+      }
+      .crop{
+        object-fit: cover;
+      }
+      #imagebundle{
+        text-align:center;
+      }
+    </style>
   </head>
   <body>
     <h1>SATUS 주변 맛집</h1>
     <p>세터스 주변의 맛집들을 소개합니다.</p>
-    <img src="koreanfood.jpg"></img>
-    <img src="japanesefood.jpg"></img>
-    <img src="chinesefood.jpg"></img>
-    <img src="westernfood.jpg"></img>
-    <img src="instantfood.jpg"></img>      
+    <div id="imagebundle">
+      <a href="koreanfood.html"><img src="koreanfood.jpg" class="crop"></a>
+      <a href="japanesefood.html"><img src="japanesefood.jpg" class="crop"></a>
+      <a href="chinesefood.html"><img src="chinesefood.jpg" class="crop"></a>
+      <a href="westernfood.html"><img src="westernfood.jpg" class="crop"></a>
+      <a href="instantfood.html"><img src="instantfood.jpg" class="crop"></a>
+    </div>    
   </body>
 </html>
