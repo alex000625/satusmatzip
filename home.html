@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -16,20 +17,35 @@
       .crop{
         object-fit: cover;
       }
-      #imagebundle{
+      #imagebundle div{
         text-align:center;
+      }
+      .container{
+        position:relative;
+        text-align:center;
+        color:white;
+      }
+      .centered{
+        position:absolute;
+        top:50%;
+        left:50%;
       }
     </style>
   </head>
   <body>
     <h1>SATUS 주변 맛집</h1>
     <p>세터스 주변의 맛집들을 소개합니다.</p>
-    <div id="imagebundle">
+    <div class="container" id="imagebundle">
       <a href="koreanfood.html"><img src="koreanfood.jpg" class="crop"></a>
+        <div class="centered" style="transform:translate(-1525%)">한식</div>
       <a href="japanesefood.html"><img src="japanesefood.jpg" class="crop"></a>
+        <div class="centered" style="transform:translate(-800%)">일식</div>
       <a href="chinesefood.html"><img src="chinesefood.jpg" class="crop"></a>
+        <div class="centered" style="transform:translate(-50%)">중식</div>
       <a href="westernfood.html"><img src="westernfood.jpg" class="crop"></a>
+        <div class="centered" style="transform:translate(700%)">양식</div>
       <a href="instantfood.html"><img src="instantfood.jpg" class="crop"></a>
-    </div>    
+        <div class="centered" style="transform:translate(1410%)">분식</div>
+    </div>
   </body>
 </html>
