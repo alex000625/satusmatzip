@@ -3,54 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <style>
-      h1{
-        text-align:center;
-        border-bottom:1px black solid;
-        padding:5px;
-      }
-      img{
-        width:200px;
-        height:200px;
-        border-radius:50%;
-        opacity:0.8;
-      }
-      .crop{
-        object-fit: cover;
-      }
-      #imagebundle div{
-        text-align:center;
-      }
-      .container{
-        position:relative;
-        text-align:center;
-        color:white;
-        text-shadow:2px 2px red;
-        display: inline;
-      }
-      .centered{
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -500%);
-      }
-      .image{
-        text-align:center;
-      }
-
-      @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 812px)
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: portrait){
-        .centered{
-        transform:translate(-50%, -50%)
-        }
-        .container{
-          display:block;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      sessionStorage.setItem('tabnumber',0);
+    </script>
   </head>
   <body>
     <h1>SATUS 주변 맛집</h1>
@@ -58,23 +14,23 @@
 
 <div class= "image">
     <div class="container" id="imagebundle">
-      <a href="koreanfood.html"><img src="koreanfood.jpg" class="crop"></a>
+      <a href="matzipList.html"><img src="images/koreanfood.jpg" class="crop"></a>
         <div class="centered">한식</div>
     </div>
     <div class="container" id="imagebundle">
-      <a href="japanesefood.html"><img src="japanesefood.jpg" class="crop"></a>
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',1)"><img src="images/japanesefood.jpg" class="crop"></a>
         <div class="centered">일식</div>
     </div>
     <div class="container" id="imagebundle">
-      <a href="chinesefood.html"><img src="chinesefood.jpg" class="crop"></a>
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',2)"><img src="images/chinesefood.jpg" class="crop"></a>
         <div class="centered">중식</div>
     </div>
     <div class="container" id="imagebundle">
-      <a href="westernfood.html"><img src="westernfood.jpg" class="crop"></a>
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',3)"><img src="images/westernfood.jpg" class="crop"></a>
         <div class="centered">양식</div>
     </div>
     <div class="container" id="imagebundle">
-      <a href="instantfood.html"><img src="instantfood.jpg" class="crop"></a>
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',4)"><img src="images/instantfood.jpg" class="crop"></a>
         <div class="centered">분식</div>
     </div>
   </div>
