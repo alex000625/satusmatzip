@@ -1,1 +1,97 @@
-<start>
+h1{
+	text-align:center;
+	border-bottom:1px black solid;
+	padding:5px;
+}
+img{
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	opacity:0.8;
+}
+.crop{
+	object-fit: cover;
+}
+#imagebundle div{
+	text-align:center;
+}
+.container{
+	position:relative;
+	text-align:center;
+	color:white;
+	text-shadow:2px 2px red;
+	display: inline;
+}
+.centered{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -500%);
+}
+.image{
+	text-align:center;
+}
+
+body{
+	margin: 0px;
+	padding: 20px;
+	background: #e2e2e2;
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	line-height: 15pt;
+}
+
+/*---------- tab nav */
+#tab_nav{
+	display: block;
+	width: 100%;
+}
+#tab_nav ul{
+	display: table;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+	width: 100%; /* <---------- Remove this property to make the width of the tabs normal*/
+}
+#tab_nav li{
+	display: table-cell;
+	text-align: center;
+	padding: 0  2px 0 0;
+}
+#tab_nav li a{
+	display: block;
+	font-weight: bold;
+	color: #555;
+	text-decoration: none;
+	padding: 20px;
+	background: #ccc;
+	/*Rounded Corners*/
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+	border-right: 1px solid #ccc;
+	/*Gradient*/
+	background: -webkit-linear-gradient(top, #fff, #f2f2f2);
+	background: -webkit-linear-gradient(top, #fff, #f2f2f2);
+	background: -ms-linear-gradient(top, #fff, #f2f2f2);
+    background: -o-linear-gradient(top, #fff, #f2f2f2);
+}
+#tab_nav li a.selected{
+	background: #fff;
+	color: #000;
+}
+#tab_nav div{
+	display: none;
+	margin: 0px;
+	padding: 20px;
+	color: #555;
+	background: #fff;
+	box-shadow: 2px 1px 1px 0px #dddddd;
+}
+#tab_nav div.selected{
+	display: block;
+}
+#tab_nav div p{
+	margin: 0px 0px 20px 0px;
+}
