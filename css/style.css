@@ -1,10 +1,11 @@
 /* index page css */
+
 h1{
 	text-align:center;
 	border-bottom:1px black solid;
 	padding:5px;
 }
-img{
+#homeImage {
 	width:200px;
 	height:200px;
 	border-radius:50%;
@@ -13,7 +14,7 @@ img{
 .crop{
 	object-fit: cover;
 }
-#imagebundle div{
+#imagebundle {
 	text-align:center;
 }
 .container1{
@@ -33,6 +34,7 @@ img{
 	text-align:center;
 }
 
+
 body{
 	margin: 0px;
 	padding: 20px;
@@ -44,12 +46,11 @@ body{
 
 
 
-
-
 /*---------- tab nav */
 #tab_nav{
 	display: block;
-	width: 100%;
+	width: 101%;
+	padding: 10px;
 }
 #tab_nav ul{
 	display: table;
@@ -92,7 +93,6 @@ body{
 	padding: 20px;
 	color: #555;
 	background: #fff;
-	box-shadow: 2px 1px 1px 0px #dddddd;
 }
 #tab_nav div.selected{
 	display: block;
