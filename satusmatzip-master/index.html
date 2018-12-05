@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      sessionStorage.setItem('tabnumber',0);
+    </script>
+  </head>
+  <body>
+    <h1>SATUS 주변 맛집</h1>
+    <p>세터스 주변의 맛집들을 소개합니다.</p>
+
+<div class= "image">
+    <div class="container1" id="imagebundle">
+      <a href="matzipList.html"><img src="images/koreanfood.jpg" class="crop" id="homeImage"></a>
+        <div class="centered">한식</div>
+    </div>
+    <div class="container1" id="imagebundle">
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',1);"><img src="images/japanesefood.jpg" class="crop" id="homeImage"></a>
+        <div class="centered">일식</div>
+    </div>
+    <div class="container1" id="imagebundle">
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',2)"><img src="images/chinesefood.jpg" class="crop" id="homeImage"></a>
+        <div class="centered">중식</div>
+    </div>
+    <div class="container1" id="imagebundle">
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',3)"><img src="images/westernfood.jpg" class="crop" id="homeImage"></a>
+        <div class="centered">양식</div>
+    </div>
+    <div class="container1" id="imagebundle">
+      <a href="matzipList.html" onclick="sessionStorage.setItem('tabnumber',4)"><img src="images/instantfood.jpg" class="crop" id="homeImage"></a>
+        <div class="centered">분식</div>
+    </div>
+  </div>
+  </body>
+</html>
