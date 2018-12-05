@@ -7,7 +7,7 @@ $(document).ready(function(){
 	//Select the first tab and div by default
 	$('#tab_nav > ul > li > a').eq(tab).addClass( "selected" );
 	$('#tab_nav > div').eq(tab).addClass( "selected" );
-
+	$('#tab_nav > .selected > div').find('div').andSelf().css('display','block');
 
   //EVENT DELEGATION
 	//This assigns an onclick event listener to the UL tag.
@@ -24,7 +24,8 @@ $(document).ready(function(){
         /*Handle Tab Content*/
 			   var clicked_index = aElement.index(this);
 			   divContent.css('display','none');
-			   divContent.eq(clicked_index).css('display','block');
+			   divContent.eq(clicked_index).find('div').andSelf().css('display','block');
+
 
 		   	$(this).blur();
 			  return false;
